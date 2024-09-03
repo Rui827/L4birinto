@@ -1,5 +1,5 @@
 <script lang="ts">
-    let tituloDoJogo : string = "Encontre o Tesouro"
+    let tituloDoJogo : string = "kkk"
 </script>
 
 <h1>
