@@ -3,10 +3,10 @@
 <img class="sobre" src="/images/logoIFPE.png" alt="logo IPFE"/>
 
 <p>
-    Autor: Allan Diego Silva Lima
+    Autor: Bruno Sillva e Rui Barbosa
 </p>
 <p>
-  <a href="allan.lima@igarassu.ifpe.edu.br">allan.lima@igarassu.ifpe.edu.br</a>
+  <a href="allan.lima@igarassu.ifpe.edu.br">bgfs2@discente.ifpe.edu.br</a>
 </p>
 
-<a class="menu" href="/">Voltar ao Menu</a>
+<a class="menu" href="/">Return to menu</a>
