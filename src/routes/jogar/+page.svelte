@@ -24,17 +24,17 @@
         objetivo.linha = 9
         objetivo.coluna = 9
 
-        let mapa : number[][] = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                         [0, 0, 0, 1, 1, 1, 1, 0, 0, 0],
-                         [0, 0, 0, 1, 0, 0, 1, 0, 0, 0],
-                         [0, 0, 0, 1, 0, 0, 1, 0, 0, 0],
-                         [0, 0, 0, 1, 0, 0, 1, 0, 0, 0],
-                         [0, 0, 0, 1, 0, 0, 1, 0, 0, 0],
-                         [0, 0, 0, 1, 1, 1, 1, 0, 0, 0],
-                         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-                        ]
+        let mapa : number[][] = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                                 [0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1],
+                                 [1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1],
+                                 [1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1],
+                                 [1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0],
+                                 [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1],
+                                 [0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1],
+                                 [1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 2, 0],
+                                 [1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1],
+                                 [0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 2, 0, 0, 0, 0, 1]
+                                ]
 
         let estado : EstadoJogo = new EstadoJogo()
         estado.posicaoPersonagem = personagem
@@ -74,7 +74,7 @@
 		 }
 
         if (novaPosicao.linha == jogo.posicaoObjetivo.linha && novaPosicao.coluna == jogo.posicaoObjetivo.linha) {
-            alert("Parabéns, você chegou ao objetivo")
+            alert("Parabéns, Squirtle você voltou!")
             goto("/")
         }
 
@@ -88,7 +88,7 @@
     
 </script>
 
-<h1>Movimente o personagem (quadrado cinza) até o objetivo (quadrado roxo)</h1>
+<h1 class="movimenta">Movimente o Squirtle até sua Pokebola</h1>
 
 <table>
     {#each jogo.mapa as linha, i}
@@ -110,6 +110,6 @@
 
 <br />
 
-<a class="menu" href="/">Voltar ao Menu</a>
+<a class="menu" href="/">Return to menu </a>
 
 <svelte:window on:keydown|preventDefault={onKeyDown} />

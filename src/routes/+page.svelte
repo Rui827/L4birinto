@@ -1,12 +1,13 @@
 <script lang="ts">
-    let tituloDoJogo : string = "kkk"
+    let tituloDoJogo : string = "Labirinto"
 </script>
 
 <h1>
     {tituloDoJogo}
+    
 </h1>
 
 <br />
-<a class="menu" href="/jogar">Jogar</a>
+<a class="menu" href="/jogar">Play</a>
 <br />
-<a class="menu" href="/sobre">Sobre</a>
+<a class="menu" href="/sobre">Info</a>

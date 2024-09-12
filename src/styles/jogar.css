@@ -16,16 +16,25 @@ td.celula {
 }
 
 td.personagem {
-    background-color: rgb(211, 211, 211);
+   background-image: url(/images/juncuncio.jpg);
+   background-size: cover;
+   /* rgb(211, 211, 211);*/
     cursor: pointer;
 }
 
 td.objetivo {
-    background-color: purple;
+    /*background-color:/*rgb(236, 217, 42);*/
+    background-size: cover;
     color: white;
+    background-image: url(/images/pokebola.png);
 }
 
 td.bloco {
-    background-color: black;
+    background-image: url(/images/pedra.png);
+    background-size: cover;
+    /* black; */
     color: white;
+}
+.movimenta{
+    font-size: 50px;
 }
