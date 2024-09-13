@@ -74,7 +74,7 @@
 		 }
 
         if (novaPosicao.linha == jogo.posicaoObjetivo.linha && novaPosicao.coluna == jogo.posicaoObjetivo.linha) {
-            alert("Parabéns, Squirtle você voltou!")
+            alert("Congratulations, Squirtle you came back!")
             goto("/")
         }
 
@@ -88,7 +88,7 @@
     
 </script>
 
-<h1 class="movimenta">Movimente o Squirtle até sua Pokebola</h1>
+<h1 class="movimenta">Move the Squirtle until yours Pokeball</h1>
 
 <table>
     {#each jogo.mapa as linha, i}
